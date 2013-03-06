@@ -1,0 +1,22 @@
+<HTML>
+    <head>
+    </head>
+    <body>
+    </body>
+        <script>
+            (function() {
+                'use strict';
+
+                var script = document.createElement('script');
+                var Config = {
+                    host: '.',
+                }
+                script.addEventListener('load', function () {
+                    require.appConfig = Config;
+                });
+                script.setAttribute('src', Config.host + '/lib/require-2.1.2.min.js');
+                script.setAttribute('data-main', Config.host + '/engine/main.js');
+                document.head.appendChild(script);
+                }).call(window);
+    </script>
+</HTML>
