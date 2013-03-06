@@ -6,20 +6,12 @@ define(['backbone'],function(Backbone) {
     var App = _.extend({
         'initialize': function(){
             require(
-                ['modules/default/views/main', 'modules/posts/main'],
+                ['modules/default/views/index', 'modules/posts/main'],
                 function(DefaultViewsMain, Posts){
-                    this.Routeur = Backbone.Router.extend({
-                        'routes': {
-                            '': 'posts'
-                        },
-                        'posts': function(){
-                            console.log('toto');
-                        }
-                    });
-                    this.Routeur = new this.Routeur();
+                    var postRouteur = new Posts.Router();
                     Backbone.history.start();
 
-                    this.view = DefaultViewsMain;
+                    this.views = DefaultViewsMain;
                     return this;
                 }.bind(this)
             );

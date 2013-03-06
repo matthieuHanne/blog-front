@@ -1,15 +1,26 @@
 /* Post main*/
+define(['app', 'backbone'], function(App, Backbone) {
+    'use strict';
 
-define(
-    ['app', 'backbone', 'modules/posts/views/main', 'modules/posts/views/post'],
-    function(App, Backbone, PostsViersMain, PostsViewsPost) {
-        'use strict';
-
-        var Post = _.extend({
-            '': null,
-            'initialize': function(){
-                App.Router.route('/posts', 'postsList');
+    var Posts = _.extend({
+        '': null,
+        'initialize': function(){
+            require(
+                ['modules/posts/views/main', 'modules/posts/views/post'],
+                function(PostsViersMain, PostsViewsPosts){
+                }.bind(this)
+            );
+        },
+        'Router': Backbone.Router.extend({
+            'routes': {
+                'posts': 'posts'
+            },
+            'posts': function(){
+                console.log("toto");
             }
-        });
-    }
-);
+        })
+
+    });
+    return Posts;
+});
+
