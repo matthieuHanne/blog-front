@@ -8,7 +8,6 @@ define(
         var Post = _.extend({
             '': null,
             'initialize': function(){
-                App.Router.route('/posts', 'postsList');
             }
         });
     }

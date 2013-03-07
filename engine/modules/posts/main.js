@@ -13,10 +13,10 @@ define(['app', 'backbone'], function(App, Backbone) {
         },
         'Router': Backbone.Router.extend({
             'routes': {
-                'posts': 'posts'
+                '': 'posts'
             },
             'posts': function(){
-                console.log("toto");
+                console.log('toto');
             }
         })
 

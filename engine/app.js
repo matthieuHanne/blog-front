@@ -5,13 +5,13 @@ define(['backbone'],function(Backbone) {
 
     var App = _.extend({
         'initialize': function(){
-            require(
+            define(
                 ['modules/default/views/index', 'modules/posts/main'],
                 function(DefaultViewsMain, Posts){
+                    this.views = DefaultViewsMain;
                     var postRouteur = new Posts.Router();
                     Backbone.history.start();
 
-                    this.views = DefaultViewsMain;
                     return this;
                 }.bind(this)
             );
