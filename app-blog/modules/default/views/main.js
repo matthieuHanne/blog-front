@@ -6,12 +6,13 @@ define(['backbone'], function(Backbone){
     return Backbone.View.extend({
         'id': 'main',
         'tagName': 'div',
-        'initialize': function(el) {
-            this.setElement(el);
+        'initialize': function() {
             this.$el.append(
                 $('<div>').addClass('header'),
                 $('<div>').addClass('content')
             );
+            //this.$el.html(_.template(mainTpl));
+            $(document.getElementsByTagName('body')).append(this.$el);
         },
         'render': function(el, target){
             if(el instanceof Backbone.View)

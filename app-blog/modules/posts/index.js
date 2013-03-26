@@ -18,22 +18,17 @@ define(['app', 'backbone'], function(App, Backbone) {
             },
 
             'default': function(){
-                require([
-                        'modules/posts/views/list',
-                        'core/posts/collection'
-                ], function(PostsViewList, PostsCollection){
+                require(['modules/posts/views/list', 'core/posts/collection'], function(PostsViewList, PostsCollection){
                     var postsCollection = new PostsCollection();
-                    var listView = new PostsViewList({'collection' : postsCollection});
-                    App.view.render(listView.render());
-                    //postsCollection.fetch({'success': function(){
-                    //    var listView = new PostsViewList({'collection' : postsCollection});
-                    //    App.view.render(listView.render());
-                    //}
+                    postsCollection.fetch({'success': function(){
+                        var listView = new PostsViewList({'collection' : postsCollection});
+                        App.view.render(listView.render());
+                    }});
                 });
             },
 
             'posts/edit': function(){
-                App.view.render(PostView.render)
+                App.view.render(PostView.render, $('.content'));
                 alert('tata');
             }
         })

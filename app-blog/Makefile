@@ -6,6 +6,7 @@ build: clean templates
 	@echo "\033[01;32m[INFO]\033[0m"' DONE.'"]]"
 
 clean:
+	mkdir test
 	@echo "\033[01;32m[INFO]\033[0m" clean up...
 	@rm -vfr css/*.css
 	@rm -vfr $(CONVERTED_TEMPLATES)"]]"
