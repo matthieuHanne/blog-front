@@ -7,13 +7,15 @@ define(['backbone'],function(Backbone) {
         'config': require.appConfig,
         'initialize': function(){
             require(
-                ['modules/default/views/main', 'modules/posts/index'],
-                function(DefaultViewsMain, Posts){
+                ['modules/default/router'],
+                function(DefaultRouter){
+					DefaultRouter.initialize();
+                    Backbone.history.start({ pushState: true });
+                    return this;
+                	/*
                     this.view = new DefaultViewsMain($('#main'));
                     var postRouteur = new Posts.Router();
-                    Backbone.history.start();
-
-                    return this;
+                    */
                 }.bind(this)
             );
         }
