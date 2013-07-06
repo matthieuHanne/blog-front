@@ -1,24 +1,24 @@
 <HTML>
-    <head>
-    </head>
-    <body>
-    Index.html
-    </body>
-        <script>
-            (function() {
-                'use strict';
+	<head>
+	</head>
+	<body>
+		Index.html
+	</body>
+	<script>
+		(function() {
+			'use strict';
 
-                var script = document.createElement('script');
-                var Config = {
-                    host: '.',
-                    apiUrl: 'http://localhost:3000'
-                }
-                script.addEventListener('load', function () {
-                    require.appConfig = Config;
-                });
-                script.setAttribute('src', Config.host + '/lib/require-2.1.2.min.js');
-                script.setAttribute('data-main', Config.host + '/app-blog/main');
-                document.head.appendChild(script);
-                }).call(window);
-    </script>
+			var script = document.createElement('script');
+			var Config = {
+				host: '.',
+				apiUrl: 'http://localhost:3000'
+			}
+			script.addEventListener('load', function () {
+				require.appConfig = Config;
+			});
+			script.setAttribute('src', Config.host + '/lib/require-2.1.2.min.js');
+			script.setAttribute('data-main', Config.host + '/app-blog/main');
+			document.head.appendChild(script);
+		}).call(window);
+	</script>
 </HTML>
