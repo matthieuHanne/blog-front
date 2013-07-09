@@ -6,9 +6,9 @@ define(['app', 'backbone'], function(App, Backbone) {
 		'initialize': function(){
 			// Set up views
 			require(['modules/about/views/index', 'modules/about/views/menu','modules/about/views/mySelf'],function(AboutViewIndex,AboutViewMenu,AboutViewMySelf){
-					App.view.render((new AboutViewIndex()).render());
 					App.view.render((new AboutViewMenu()).render());
-					App.view.render((new AboutViewMySelf()).render());
+					App.view.render((new AboutViewIndex()).render(), '#container');
+					App.view.render((new AboutViewMySelf()).render(),'#container');
 					//postsCollection.fetch({'success': function(){
 					//}});
 				});

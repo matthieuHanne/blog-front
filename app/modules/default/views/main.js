@@ -1,27 +1,30 @@
 /* Default main view*/
 
 define(['backbone'], function(Backbone){
-    'use strict';
+	'use strict';
 
-    return Backbone.View.extend({
-        'id': 'main',
-        'tagName': 'div',
-        'initialize': function() {
-            this.$el.append(
-                $('<div>').addClass('header'),
-                $('<div>').addClass('content')
-            );
-            //this.$el.html(_.template(mainTpl));
-            $(document.getElementsByTagName('body')).append(this.$el);
-        },
-        'render': function(el, target){
-            if(el instanceof Backbone.View)
-                el = el.$el;
+	return Backbone.View.extend({
+		'id': 'wrapper',
+		'tagName': 'div',
+		'initialize': function() {
+			this.$el.append(
+				$('<div>').attr('id', 'container')
+				);
+			//this.$el.html(_.template(mainTpl));
+			$(document.getElementsByTagName('body')).append(this.$el);
+		},
+		'render': function(el, target, option){
+			if(el instanceof Backbone.View)
+		el = el.$el;
 
-            target = target ? this.$el.find(target) : this.$el;
-            target.append(el);
 
-            return this;
-        }
-    });
+	target = target ? this.$l.find(target) : this.$el;
+	if( option === 'overwrite')
+		target.empty().append(el);
+	else
+		target.append(el);
+
+	return this;
+		}
+	});
 });
