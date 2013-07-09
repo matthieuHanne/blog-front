@@ -18,7 +18,7 @@ define(['backbone'], function(Backbone){
 		el = el.$el;
 
 
-	target = target ? this.$l.find(target) : this.$el;
+	target = target ? this.$el.find(target) : this.$el;
 	if( option === 'overwrite')
 		target.empty().append(el);
 	else
