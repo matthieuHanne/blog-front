@@ -4,8 +4,10 @@ define(['backbone', 'text!modules/about/templates/mySelf.tpl'], function(Backbon
     'use strict';
 
     return Backbone.View.extend({
-        'className': 'mySelf-section',
-        'initialze': function(){
+		'tagName'	: 'section',
+		'className'	: 'section',
+		'id': 'section1',
+        'initialze'	: function(){
         },
         'render': function(){
             this.$el.html(_.template(tpl));
