@@ -6,7 +6,7 @@ define(['backbone', 'text!modules/about/templates/mySelf.tpl'], function(Backbon
     return Backbone.View.extend({
 		'tagName'	: 'section',
 		'className'	: 'section',
-		'id': 'section1',
+		'id': 'section2',
         'initialze'	: function(){
         },
         'render': function(){
