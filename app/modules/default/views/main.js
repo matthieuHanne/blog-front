@@ -8,6 +8,7 @@ define(['backbone'], function(Backbone){
 		'tagName': 'div',
 		'initialize': function() {
 			this.$el.append(
+				$('<div>').attr('id', 'sidebar'),
 				$('<div>').attr('id', 'container')
 				);
 			//this.$el.html(_.template(mainTpl));
