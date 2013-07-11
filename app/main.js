@@ -7,6 +7,7 @@ require.config({
         'modules': 'app/modules',
         'underscore': 'lib/lodash',
         'waypoints': 'lib/waypoints',
+        'easing': 'lib/jquery-easing.1.3',
         'resources': 'app/resources',
     },
     'shim': {
@@ -17,8 +18,9 @@ require.config({
             ],
             'exports': 'Backbone'
         },
-        'app': {
+        'easing': {
             'deps': [
+            	'lib/jquery-1.8.3.min'
             ]
         }
 

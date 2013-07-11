@@ -1,5 +1,5 @@
 /* About module*/
-define(['app', 'backbone', 'waypoints'], function(App, Backbone, Waypoints) {
+define(['app', 'backbone'], function(App, Backbone) {
 	'use strict';
 
 	var About = _.extend({
@@ -9,27 +9,13 @@ define(['app', 'backbone', 'waypoints'], function(App, Backbone, Waypoints) {
 			function(AboutViewIndex,AboutViewMenu,AboutViewMySelf,AboutViewProjects){
 				App.view.render((new AboutViewIndex()).render(), '#container');
 				App.view.render((new AboutViewMySelf()).render(),'#container');
+				//get projects from API
 				App.view.render((new AboutViewProjects()).render(),'#container');
 				/*Menu at last, because he load his elements from */
-				App.view.render((new AboutViewMenu()).render(), '#sidebar');
+				App.view.render((new AboutViewMenu()).render().initScroll(), '#sidebar');
 				//postsCollection.fetch({'success': function(){
 				// Set up waipointsi
 				//
-				var section = $('section');
-				section.waypoint(function (direction) {
-
-					var sectionId = parseInt($(this).attr('id').substr($(this).attr('id').length-1));
-
-					if (direction === 'down') {
-						$('.navigation li[section="' + sectionId + '"]').addClass('active').siblings().removeClass('active');
-					}
-					else {
-						$('.navigation li[section="' + (sectionId-1) + '"]').addClass('active').siblings().removeClass('active');
-					}
-
-				});
-
-
 				//}});
 			});
 		}.bind(this)
