@@ -4,8 +4,11 @@ define(['backbone', 'text!modules/about/templates/menu.tpl'], function(Backbone,
     'use strict';
 
     return Backbone.View.extend({
-        'initialze': function(){
-        },
+        'initialize': function(){
+			/* waypoints ininitalisations */
+			console.log($('section'));
+
+		},
         'events': {
 			'click .btn-navbar' : 'toggleSidebar'
         },

@@ -6,6 +6,7 @@ require.config({
         'app': 'app/app',
         'modules': 'app/modules',
         'underscore': 'lib/lodash',
+        'waypoints': 'lib/waypoints',
         'resources': 'app/resources',
     },
     'shim': {
