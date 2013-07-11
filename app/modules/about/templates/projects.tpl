@@ -1,7 +1,7 @@
 <div class="container-fluid">
 	<div class="row-fluid title">
 		<div class="span4">
-			<h2>Projects</h2>
+			<h1>Projects</h1>
 		</div><!-- /span4 -->
 		<div class="span8 hidden-phone alt">	
 			<hr>

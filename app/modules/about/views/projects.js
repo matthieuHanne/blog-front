@@ -1,6 +1,6 @@
 /*global define*/
 
-define(['backbone', 'text!modules/about/templates/projetcs.tpl'], function(Backbone, tpl){
+define(['backbone', 'text!modules/about/templates/projects.tpl'], function(Backbone, tpl){
     'use strict';
 
     return Backbone.View.extend({
