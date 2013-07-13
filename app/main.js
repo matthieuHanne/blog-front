@@ -8,6 +8,7 @@ require.config({
         'underscore': 'lib/lodash',
         'waypoints': 'lib/waypoints',
         'easing': 'lib/jquery-easing.1.3',
+        'bootstrap': 'lib/bootstrap.min',
         'resources': 'app/resources',
     },
     'shim': {

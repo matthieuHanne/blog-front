@@ -504,30 +504,30 @@ a:hover {
 
 /* Section 3 */ 
 
-#section3 {
+#section5 {
 	background-image:url(../img/project-bg.jpg);
 /*	color: #F1F1F1;*/
 }
 
-#section3 h2 {
+#section5 h2 {
 	margin-left: -5px;
 }
 
 
-#section3 .content img {
+#section5 .content img {
 	max-width: 96%;
 	padding: 2%;
 	background-color: #F1F1F1;
 }
 
-#section3 h6 {
+#section5 h6 {
 	color:#bdc3c7;
 	font-size:16px;
 	padding-top:12px;
 }
 
 
-#section3 .center {
+#section5 .center {
 	text-align:center
 }
 
@@ -598,36 +598,36 @@ a:hover {
 
 /* Section 4 */
 
-#section4  h2 {
+#section3  h2 {
 	margin-left: -4px;
 }
 
-#section4 .read-more a, #section4 .read-more a:hover {
+#section3 .read-more a, #section3 .read-more a:hover {
 	color: #151515;
 }
 
-#section4 .content .span4, #section4 .content .span6 {
+#section3 .content .span4, #section3 .content .span6 {
 	padding-right: 20px;
 }
 
-#section4 .content {
+#section3 .content {
 	min-height: 300px;
 }
 
-#section4 .content .span8 {
+#section3 .content .span8 {
 	display: none;
 }
 
-#section4 .content .span8.current {
+#section3 .content .span8.current {
 	display: block;
 }
 
-#section4 ul.article-tags {
+#section3 ul.article-tags {
     border-top: 1px solid #151515;
     margin: 40px 0 0;
 }
 
-#section4 ul.article-tags li {
+#section3 ul.article-tags li {
     border-bottom: 1px solid #151515;
     cursor: pointer;
     display: block;
@@ -639,19 +639,19 @@ a:hover {
     position: relative;
 }
 
-#section4 ul.article-tags li:hover, #section4 ul.article-tags li.current {
+#section3 ul.article-tags li:hover, #section3 ul.article-tags li.current {
     background-color: #c0392b;
     color:#ecf0f1;
 }
 
-#section4 ul.article-tags i {
+#section3 ul.article-tags i {
     left: 15px;
     font-size: 16px; font-size: 1.6rem;
     position: absolute;
     top: 10px;
 }
 
-#section4 h4 {
+#section3 h4 {
 	border-bottom: 1px solid #151515;
     height: 35px;
     margin-bottom: 18px;
@@ -842,7 +842,7 @@ a:hover {
 		width: 48.6188%;
 	}
 	
-	#section4 .content .expand {
+	#section3 .content .expand {
 		width: 100%;
 	}
 
@@ -887,16 +887,16 @@ a:hover {
 		width: 55%;
 	}
 	
-	#section3 .content img {
+	#section5 .content img {
     	margin-top: 30px;
     	padding: 1.5%;
     }
         
-    #section3 .table th, #section3 .table td {
+    #section5 .table th, #section5 .table td {
     	font-size: 13px; font-size: 1.3rem;
 	}
 	
-	#section3 .table {
+	#section5 .table {
 		margin-top: 30px;
 	}
 
@@ -964,11 +964,11 @@ a:hover {
 	    padding: 3%;
 	}
 	
-	#section3 .table th, #section3 .table td {
+	#section5 .table th, #section5 .table td {
     	font-size: 11px; font-size: 1.1rem;
 	}
 	
-	#section4 h4 {
+	#section3 h4 {
 	    height: auto;
 	}    
 

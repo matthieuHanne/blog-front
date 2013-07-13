@@ -7,21 +7,11 @@
 			<hr>
 		</div><!-- /span8 -->
 	</div><!-- /row-fluid -->
+
 	<div class="row-fluid desc">
-		<div class="span8">
+		<div class="span4">
 			<p>We are a team of equal contributors who speak openly and honestly with clients, and who take the practice of transparency so seriously that we work in an office with glass walls. We share successes as a team, and we test until work is perfect. We can show where our time goes, and more importantly, what our time creates.</p>
 		</div><!-- /span8 -->
-	</div><!-- /row-fluid -->
-	<div class="row-fluid content">
-		<div class="span4">
-			<ul class="article-tags">
-				<li data-blog="bob" class="current"><i class="icon-user"></i>Bob Singer</li>
-				<li data-blog="mark"><i class="icon-user"></i>Mark Sinclair</li>
-				<li data-blog="laura"><i class="icon-user"></i>Laura Gates</li>
-				<li data-blog="jane"><i class="icon-user"></i>Jane White</li>
-			</ul>
-		</div><!-- /span4 -->
-		
 		<div class="span8 slide current" data-blog="bob">
 			<div class="row-fluid">
 				<div class="span6 expand">
@@ -36,7 +26,36 @@
 				</div><!-- /span6 -->
 			</div><!-- /row-fluid -->
 		</div><!-- /span8 -->
+	</div><!-- /row-fluid -->
+
+	<div class="row-fluid content">
+		<div class="span4">
+			<ul class="article-tags">
+				<li data-blog="bob" class="current"><i class="icon-user"></i>Bob Singer</li>
+				<li data-blog="mark"><i class="icon-user"></i>Mark Sinclair</li>
+				<li data-blog="laura"><i class="icon-user"></i>Laura Gates</li>
+				<li data-blog="jane"><i class="icon-user"></i>Jane White</li>
+			</ul>
+		</div><!-- /span4 -->
 		
+		<div class="span4">
+			<ul class="article-tags">
+				<li data-blog="bob" class="current"><i class="icon-user"></i>Bob Singer</li>
+				<li data-blog="mark"><i class="icon-user"></i>Mark Sinclair</li>
+				<li data-blog="laura"><i class="icon-user"></i>Laura Gates</li>
+				<li data-blog="jane"><i class="icon-user"></i>Jane White</li>
+			</ul>
+		</div><!-- /span4 -->
+
+		<div class="span4">
+			<ul class="article-tags">
+				<li data-blog="bob" class="current"><i class="icon-user"></i>Bob Singer</li>
+				<li data-blog="mark"><i class="icon-user"></i>Mark Sinclair</li>
+				<li data-blog="laura"><i class="icon-user"></i>Laura Gates</li>
+				<li data-blog="jane"><i class="icon-user"></i>Jane White</li>
+			</ul>
+		</div><!-- /span4 -->
+<!--		
 		<div class="span8 slide" data-blog="mark">
 			<div class="row-fluid">
 				<div class="span6 expand">
@@ -81,7 +100,7 @@
 				</div><!-- /span6 -->
 			</div><!-- /row-fluid -->
 		</div><!-- /span8 -->
-														
+	-->													
 	</div><!-- /row-fluid -->
 </div><!-- /container -->
 
