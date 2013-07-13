@@ -426,7 +426,7 @@ a:hover {
 	-moz-background-size: 100% auto;
 	-o-background-size: 100% auto;
 	background-size: 100% auto;
-	background-repeat: no-repeat;
+	/*background-repeat: no-repeat;*/
 }
 
 #section1 .intro {
@@ -506,7 +506,7 @@ a:hover {
 
 #section3 {
 	background-image:url(../img/project-bg.jpg);
-	color: #F1F1F1;
+/*	color: #F1F1F1;*/
 }
 
 #section3 h2 {
@@ -730,7 +730,7 @@ a:hover {
 
 @media screen and (max-width: 1320px) {
 	
-	#section1 {
+	#seection1 {
 		background-size: 1320px auto;
 	}
 }
@@ -923,7 +923,7 @@ a:hover {
 @media screen and (min-width: 481px) {
 	
 	#section1 {
-		background-image:url(../img/intro-bg.jpg);
+		background-image:url(../img/background1.jpg);
 	}
 	
 }
@@ -941,6 +941,7 @@ a:hover {
 	}
 	
 	#section1 .intro {
+		padding-top: 100px;  
 		margin: 50px 0;
 	}
 

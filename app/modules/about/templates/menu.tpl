@@ -7,8 +7,9 @@
 <nav id="nav" class="navigation" role="navigation">
 	<ul class="unstyled">
 		<li class="active" section="1"><i class="icon-home"></i> <span>Home</span></li>
-		<li section="2"><i class="icon-rocket"></i> <span>Myseft</span></li>
+		<li section="2"><i class="icon-user"></i> <span>Myseft</span></li>
 		<li section="3"><i class="icon-laptop"></i> <span>Projects</span></li>
+		<li section="4"><i class="icon-envelope"></i> <span>Contact</span></li>
 	</ul>
 </nav><!-- /nav -->
 
