@@ -1,6 +1,6 @@
 /*global define*/
 
-define(['backbone', 'text!modules/about/templates/mySelf.tpl'], function(Backbone, tpl){
+define(['backbone', 'text!modules/about/templates/mySelf.tpl', 'text!modules/about/templates/resume.tpl', 'text!modules/about/templates/skills.tpl'], function(Backbone, tpl, resumeTpl, skillsTpl){
     'use strict';
 
     return Backbone.View.extend({
@@ -10,15 +10,14 @@ define(['backbone', 'text!modules/about/templates/mySelf.tpl'], function(Backbon
         'initialze'	: function(){
         },
         'events': {
-			'click .service' : 'showTopic'
+			'click li' : 'showTopic'
         },
         'render': function(){
             this.$el.html(_.template(tpl));
             return this;
         },
         'showTopic' : function(){
-			console.log('im the topic');
-			this.$el.html('<p>je marche</p>');
+			this.$el.find('.focus').hide().html(_.template(skillsTpl)).slideDown('slow', "easeInQuart");
         } 
     });
 });
