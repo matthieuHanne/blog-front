@@ -17,9 +17,7 @@ define(['backbone', 'text!modules/about/templates/mySelf.tpl', 'text!modules/abo
             return this;
         },
         'showTopic' : function(){
-			this.$el.find('.focus').slideUp("slow", "easeOutQuart");
-			this.$el.find('.focus').html(_.template(skillsTpl));
-			this.$el.find('.focus').slideDown("slow", "easeInQuart");
+			this.$el.find('.focus').slideUp("slow", "easeOutQuart").html(_.template(skillsTpl)).slideDown("slow", "easeInQuart");
 
         } 
     });

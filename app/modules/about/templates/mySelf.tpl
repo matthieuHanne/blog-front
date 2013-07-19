@@ -12,20 +12,23 @@
 		<div class="span12">
 				<div class="span4 list">
 					<ul class="article-tags">
-						<li data-blog="bob" ><i class="icon-group"></i></i>Rizhome</li>
-						<li data-blog="mark"><i class="icon-level-up"></i>Archlinux</li>
-						<li data-blog="laura"><i class="icon-level-up"></i>Vim</li>
-						<li data-blog="jane"><i class="icon-level-up"></i>NginX</li>
-						<li data-blog="jane"><i class="icon-level-up"></i>NginX</li>
-						<li data-blog="jane"><i class="icon-level-up"></i>NginX</li>
-						<li data-blog="jane"><i class="icon-level-up"></i>NginX</li>
+						<li data-blog="bob" ><i class="icon-group"></i></i>M2(thn) World</li>
+						<li data-blog="bob" ><i class="icon-group"></i></i>Education</li>
+						<li data-blog="mark"><i class="icon-level-up"></i>Work Experience</li>
+						<li data-blog="laura"><i class="icon-level-up"></i>Skills</li>
+						<li data-blog="jane"><i class="icon-level-up"></i>Interest</li>
+						<li data-blog="jane"><i class="icon-level-up"></i>Music</li>
+						<li data-blog="jane"><i class="icon-level-up"></i>BasketBall</li>
+						<li data-blog="jane"><i class="icon-level-up"></i>Travel</li>
+						<li data-blog="jane"><i class="icon-level-up"></i>Books</li>
+						<li data-blog="jane"><i class="icon-level-up"></i></li>
 					</ul>
 				</div>
 				<div class="span8 focus">
 					<h4>Xp earned</h4>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 					<p><img src="app/img/m2thnWorld.png" alt=""></p>
-					<p><img class="topic img-polaroid" src="app/img/uncle-sam.jpg" alt=""></p>
+					<p></p>
 					<p><img class="topic img-polaroid" src="app/img/freedomKey.jpg" alt=""></p>
 					<p><i class="icon-twitter"></i> @bobsinger</p>
 					<p><i class="icon-envelope-alt"></i> bob@yoursite.com</p>

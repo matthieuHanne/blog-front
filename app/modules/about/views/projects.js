@@ -1,6 +1,6 @@
 /*global define*/
 
-define(['backbone', 'text!modules/about/templates/projects.tpl', 'bootstrap'], function(Backbone, tpl){
+define(['backbone', 'text!modules/about/templates/projects.tpl','resources/projects/items' ,'bootstrap'], function(Backbone, tpl, Items){
     'use strict';
 
     return Backbone.View.extend({
@@ -8,6 +8,7 @@ define(['backbone', 'text!modules/about/templates/projects.tpl', 'bootstrap'], f
 		'className'	: 'section',
 		'id': 'section3',
         'initialze'	: function(){
+
         },
         'events'    : {
 			'click .article-tags li' : 'indexProject'         	
@@ -17,7 +18,7 @@ define(['backbone', 'text!modules/about/templates/projects.tpl', 'bootstrap'], f
             return this;
         },
         'indexProject': function(){
-			console.log('toto');    
+        	console.log(Items['CommOnEcoute'])
         }
     });
 });
